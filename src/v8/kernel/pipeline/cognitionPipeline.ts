@@ -16,7 +16,7 @@ PhaseExecutor
 from "./phaseExecutor";
 
 
-export class CognitionPipeline {
+export class cognitionPipeline {
 
 
 private validator =

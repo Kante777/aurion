@@ -5,3 +5,6 @@ export * from "./confidenceCalibration";
 export * from "./performanceTracker";
 
 export * from "./adaptiveCognitionEngine";
+
+export * from "./integration";
+
