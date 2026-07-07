@@ -33,3 +33,5 @@ export * from "./memoryConsolidation";
 export * from "./events";
 
 export * from "./kernel";
+
+export * from "./runtime";
