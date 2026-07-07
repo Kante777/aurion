@@ -13,3 +13,5 @@ export * from "./action";
 export * from "./integration";
 
 export * from "./adaptation";
+
+export * from "./evolution";
