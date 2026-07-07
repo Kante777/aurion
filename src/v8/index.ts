@@ -23,3 +23,5 @@ export * from "./metacognition";
 export * from "./memoryGraph";
 
 export * from "./worldModel";
+
+export * from "./attention";
