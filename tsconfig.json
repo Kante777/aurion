@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+
+    "baseUrl": "./src",
+    "paths": {
+      "@evidence/*": ["cognition/evidence/*"],
+      "@time/*": ["time/*"],
+      "@timeframe": ["core/contracts/timeframe"]
+    },
+
+    "strict": false,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "types": ["node"],
+
+    "ignoreDeprecations": "6.0"
+  },
+  "include": ["src/**/*.ts"]
+}

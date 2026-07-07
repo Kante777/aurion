@@ -1,0 +1,23 @@
+{
+  "name": "aurion",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "ts-node src/tests/graphTest.ts",
+    "guardian": "./tools/guardian/guardian.sh",
+    "verify": "npm run guardian",
+    "build": "npm run guardian && tsc",
+    "test:adaptive-bridge": "ts-node src/core/shock/tests/adaptiveBridgeTest.ts",
+    "test:regime": "ts-node src/core/shock/tests/regimeIntelligenceTest.ts",
+    "test:v7": "ts-node src/core/shock/tests/v7IntegrationTest.ts"
+  },
+  "dependencies": {
+    "axios": "^1.18.1",
+    "ws": "^8.21.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.0",
+    "@types/ws": "^8.18.1"
+  }
+}

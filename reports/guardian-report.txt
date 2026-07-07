@@ -1,0 +1,62 @@
+===================================
+AETERNUM VERIFICATION REPORT
+Generated: Mon Jul  6 14:12:22 GMT 2026
+===================================
+
+Git Commit:
+Unavailable
+
+Node:
+v24.16.0
+
+NPM:
+11.13.0
+
+TypeScript:
+Version 6.0.3
+
+Compiler Diagnostics:
+src/cognition/decision/decisionEngine.ts(1,10): error TS2305: Module '"../fusion/fusionTypes"' has no exported member 'BeliefState'.
+src/cognition/decision/decisionTypes.ts(1,10): error TS2305: Module '"../fusion/fusionTypes"' has no exported member 'BeliefState'.
+src/cognition/fusion/beliefStore.ts(1,10): error TS2305: Module '"./fusionTypes"' has no exported member 'BeliefState'.
+src/cognition/fusion/evidenceFusionEngine.ts(2,10): error TS2305: Module '"./fusionTypes"' has no exported member 'BeliefState'.
+src/core/loop/loopRunner.ts(20,37): error TS2339: Property 'status' does not exist on type 'ExecutionResult'.
+src/core/loop/loopRunner.ts(21,31): error TS2339: Property 'status' does not exist on type 'SystemHealth'.
+src/core/loop/loopRunner.ts(23,44): error TS2339: Property 'intent' does not exist on type 'boolean'.
+src/core/shock/tests/adaptationTest.ts(8,28): error TS1149: File name '/Users/KONO/aurion/src/core/shock/fusion/FusionCore.ts' differs from already included file name '/Users/KONO/aurion/src/core/shock/fusion/fusionCore.ts' only in casing.
+  The file is in the program because:
+    Matched by default include pattern '**/*'
+    Imported via "../fusion/FusionCore" from file '/Users/KONO/aurion/src/core/shock/tests/adaptationTest.ts'
+    Imported via "../fusion/fusionCore" from file '/Users/KONO/aurion/src/core/shock/tests/fusionTest.ts'
+    Imported via "../fusion/fusionCore" from file '/Users/KONO/aurion/src/core/shock/tests/shockEngineTest.ts'
+src/core/shock/tests/adaptationTest.ts(16,19): error TS2345: Argument of type 'string' is not assignable to parameter of type 'ShockDetector<unknown>'.
+src/core/shock/tests/adaptationTest.ts(18,19): error TS2345: Argument of type 'string' is not assignable to parameter of type 'ShockDetector<unknown>'.
+src/core/shock/tests/adaptationTest.ts(20,19): error TS2345: Argument of type 'string' is not assignable to parameter of type 'ShockDetector<unknown>'.
+src/core/shock/tests/adaptationTest.ts(44,14): error TS2339: Property 'process' does not exist on type 'AdaptiveEngine'.
+src/core/shock/tests/adaptationTest.ts(46,37): error TS2339: Property 'process' does not exist on type 'AdaptiveEngine'.
+src/core/shock/tests/adaptationTest.ts(50,5): error TS2339: Property 'ingest' does not exist on type 'EvidenceBus'.
+src/dashboard/streamManager.ts(7,14): error TS2339: Property 'onAny' does not exist on type 'EventBus'.
+src/dashboard/ws/wsHub.ts(21,14): error TS2339: Property 'onAny' does not exist on type 'EventBus'.
+src/engine/data/connectors/fcs.connector.ts(1,19): error TS2307: Cannot find module 'axios' or its corresponding type declarations.
+src/engine/data/connectors/fcs.connector.ts(11,25): error TS2339: Property 'FCS_API_KEY' does not exist on type '{ NODE_ENV: string; IS_PRODUCTION: boolean; IS_DEV: boolean; REDIS_URL: string; DATABASE_URL: string; }'.
+src/engine/data/connectors/oanda.connector.ts(1,19): error TS2307: Cannot find module 'axios' or its corresponding type declarations.
+src/engine/data/connectors/oanda.connector.ts(9,11): error TS2339: Property 'OANDA_ENV' does not exist on type '{ NODE_ENV: string; IS_PRODUCTION: boolean; IS_DEV: boolean; REDIS_URL: string; DATABASE_URL: string; }'.
+src/engine/data/connectors/oanda.connector.ts(19,38): error TS2339: Property 'OANDA_API_KEY' does not exist on type '{ NODE_ENV: string; IS_PRODUCTION: boolean; IS_DEV: boolean; REDIS_URL: string; DATABASE_URL: string; }'.
+src/engine/graph/marketGraphEngine.ts(34,7): error TS2322: Type '"NAS100"' is not assignable to type 'Instrument'.
+src/engine/memory/compressionEngine.ts(9,56): error TS2345: Argument of type 'unknown' is not assignable to parameter of type 'MarketEvent[]'.
+src/engine/regime/regimeMemoryEngine.ts(43,17): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type 'Map<RegimeType, RegimeProfile>'.
+  No index signature with a parameter of type 'string' was found on type 'Map<RegimeType, RegimeProfile>'.
+src/index.ts(37,38): error TS2345: Argument of type '{ id: `${string}-${string}-${string}-${string}-${string}`; instrument: string; type: string; outcome: string; features: { trend: number; volatility: number; liquidity: number; structure: number; }; timestamp: number; }[]' is not assignable to parameter of type 'MarketEvent[]'.
+  Type '{ id: `${string}-${string}-${string}-${string}-${string}`; instrument: string; type: string; outcome: string; features: { trend: number; volatility: number; liquidity: number; structure: number; }; timestamp: number; }' is not assignable to type 'MarketEvent'.
+    Types of property 'type' are incompatible.
+      Type 'string' is not assignable to type '"TRADE" | "SIMULATION" | "NEWS" | "BELIEF"'.
+src/index.ts(50,27): error TS7006: Parameter 'belief' implicitly has an 'any' type.
+src/tests/full/fullSystemTest.ts(92,35): error TS18048: 'signal.adjustment' is possibly 'undefined'.
+src/tests/graphTest.ts(22,27): error TS7006: Parameter 'data' implicitly has an 'any' type.
+src/tests/graphTest.ts(39,31): error TS7006: Parameter 'data' implicitly has an 'any' type.
+src/tests/loopTest.ts(20,31): error TS7006: Parameter 'belief' implicitly has an 'any' type.
+src/tests/systemTest.ts(18,31): error TS7006: Parameter 'belief' implicitly has an 'any' type.
+tsconfig.json(1,1): error TS5092: The root value of a 'tsconfig.json' file must be an object.
+tsconfig.json(5,5): error TS1136: Property assignment expected.
+tsconfig.json(6,3): error TS5023: Unknown compiler option 'compilerOptions'.
+tsconfig.json(15,1): error TS1012: Unexpected token.

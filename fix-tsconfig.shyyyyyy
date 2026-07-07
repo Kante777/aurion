@@ -1,0 +1,26 @@
+#!/bin/bash
+
+FILE=tsconfig.json
+
+if [ -f "$FILE" ]; then
+  cp "$FILE" tsconfig.backup.json
+  echo "✔ Backup created"
+
+  sed -i '' 's/"moduleResolution": *"Node"/"moduleResolution": "NodeNext"/g' "$FILE"
+
+  grep -q "ignoreDeprecations" "$FILE" || \
+  sed -i '' '/"compilerOptions": {/a\
+    "ignoreDeprecations": "6.0",
+' "$FILE"
+
+  echo "✔ tsconfig patched"
+else
+  echo "❌ tsconfig.json not found"
+fi
+
+echo "🧠 DONE"
+
+
+
+
+
