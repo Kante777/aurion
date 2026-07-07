@@ -25,3 +25,5 @@ export * from "./memoryGraph";
 export * from "./worldModel";
 
 export * from "./attention";
+
+export * from "./consciousness";
