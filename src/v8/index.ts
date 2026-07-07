@@ -19,3 +19,5 @@ export * from "./evolution";
 export * from "./orchestration";
 
 export * from "./metacognition";
+
+export * from "./memoryGraph";
