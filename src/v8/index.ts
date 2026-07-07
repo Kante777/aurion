@@ -21,3 +21,5 @@ export * from "./orchestration";
 export * from "./metacognition";
 
 export * from "./memoryGraph";
+
+export * from "./worldModel";
