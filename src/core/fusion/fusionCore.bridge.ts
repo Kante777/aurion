@@ -1,4 +1,4 @@
-import { AdaptiveBridge } from "./fusionCore.bridge.contract";
+import { AdaptiveBridge } from "../contracts/adaptiveBridge";
 
 export class FusionCoreBridge implements AdaptiveBridge {
   private weights: Record<string, number> = {
