@@ -27,3 +27,5 @@ CognitionPipeline as RuntimeCognitionPipeline
 export {
 KernelPipeline
 } from "./kernel/pipeline";
+
+export * from "./fusion";
