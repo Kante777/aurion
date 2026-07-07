@@ -29,3 +29,7 @@ export * from "./attention";
 export * from "./consciousness";
 
 export * from "./memoryConsolidation";
+
+export * from "./events";
+
+export * from "./kernel";
