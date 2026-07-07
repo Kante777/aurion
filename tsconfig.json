@@ -3,20 +3,29 @@
     "target": "ES2022",
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
-
+    "outDir": "./dist",
     "baseUrl": "./src",
     "paths": {
-      "@evidence/*": ["cognition/evidence/*"],
-      "@time/*": ["time/*"],
-      "@timeframe": ["core/contracts/timeframe"]
+      "@evidence/*": [
+        "cognition/evidence/*"
+      ],
+      "@time/*": [
+        "time/*"
+      ],
+      "@timeframe": [
+        "core/contracts/timeframe"
+      ]
     },
-
     "strict": false,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "types": ["node"],
-
-    "ignoreDeprecations": "6.0"
+    "types": [
+      "node"
+    ],
+    "ignoreDeprecations": "6.0",
+    "rootDir": "./src"
   },
-  "include": ["src/**/*.ts"]
+  "include": [
+    "src/**/*.ts"
+  ]
 }
